@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather dashbord</title>
+</head>
+<body>
+
+    <h2>Weather dashbord in Flask</h2>
+    <form action="{{ url_for('render_results') }}" method="POST">
+        <label for="zipCode">Location Zip code</label>
+        <input type="text" name = "zipCode">
+        <input type="submit" value = "Submit">
+    </form>
+</body>
+</html>

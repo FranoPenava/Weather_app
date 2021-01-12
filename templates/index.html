@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Weather in {{ location }}</h3>
+        <h2>{{ temp }}°C</h2>
+        <h3>{{ weather }}</h3>
+        <h4>Feels like: {{ feels_like }}°C</h4>
+
+        <form action="{{ url_for('return_back') }}" method="GET">
+            <input type="submit" value="Return back">
+        </form>
+    </div>
+</body>
+</html>
