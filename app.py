@@ -18,7 +18,7 @@ def render_results():
     zip_code = request.form.get("zipCode")
     # Accessing my api!
     api_key = get_api_key()
-    # Geting the data with function I created later
+    # Geting the data with function I create later
     data = get_weather_results(zip_code, api_key)
 
     # Accessing specific data!
