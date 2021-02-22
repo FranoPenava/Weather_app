@@ -2,6 +2,7 @@ import requests
 from configparser import ConfigParser
 from flask import Flask, render_template, request, redirect, url_for
 
+# Very simple weather app!
 # Application only works for USA zip codes!
 
 app = Flask(__name__)
